@@ -1,3 +1,9 @@
+var URL = window.location.href;
+var isSpectrum = false;
+if (URL.search('localhost1') >= 0) {
+    isSpectrum = true;
+}
+
 var myExtObject = (function() {
 
     return {
