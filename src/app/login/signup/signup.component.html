@@ -1,0 +1,66 @@
+<body>
+    <div class="container">
+        <h1>Merchant Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <div class="row">
+            <div class="col-sm">
+                <label for="ownername"><b>Owner Name</b></label>
+                <input type="text" placeholder="Enter Owner Name" name="ownername" id="ownername" required>
+            </div>
+            <div class="col-sm">
+                <label for="mobile"><b>Mobile Number</b></label>
+                <input type="text" id="invite-phone" OnlyNumber="true" placeholder="Enter Mobile No" name="mobile" required>            
+            </div>
+            <div class="col-sm">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>            
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            </div>
+            <div class="col-sm">
+                <label for="psw-confirm"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" name="psw-confirm" id="psw-confirm" required>
+            </div>
+            <div class="col-sm">
+                <label for="referral-code"><b>Referral Code (Optional)</b></label>
+                <input type="text" placeholder="Referral Code" name="referral-code" id="referral-code" required>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm">
+                <label for="businessname"><b>Business Name</b></label>
+                <input type="text" placeholder="Enter Business Name" name="businessname" id="businessname" required>            
+            </div>
+            <div class="col-sm">
+                <label for="address"><b>Address</b></label>
+                <input type="text" placeholder="Address" name="address" id="address" required>            
+            </div>
+            <div class="col-sm">
+                <label><b>I have</b></label>
+                <div class="col">
+                    <input type="checkbox" class="option-input checkbox outline" > Store / Shop
+                </div>
+                <div class="col"  >
+                    <input type="checkbox" class="option-input checkbox outline" > Agency
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>By creating an account you agree to our <a href="javascript:void(0)">Terms & Privacy</a>.</p>
+    
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+      
+      <div class="container signin">
+        <p>Already have an account? <a href="javascript:void(0)" (click)="redirectSignIn()">Sign in</a>.</p>
+      </div>
+</body>
+    

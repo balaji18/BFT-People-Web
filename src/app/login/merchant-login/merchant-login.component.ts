@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import '../externalJs/external';
+import { Router } from '@angular/router';
+import '../../externalJs/external';
 declare let myExtObject: any;
 
 
@@ -9,12 +10,18 @@ declare let myExtObject: any;
   styleUrls: ['./merchant-login.component.css']
 })
 export class MerchantLoginComponent implements OnInit {
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     setTimeout(() => {
       myExtObject.loadFlag('');
     });
+  }
+
+
+  redirectToSignUp() {
+    this.router.navigate(['merchant-signup']);
+
   }
 
 }

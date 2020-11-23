@@ -15,6 +15,7 @@ var myExtObject = (function() {
                     dropdownContainer: "body",
                     initialCountry: isSpectrum?"ng":"in",
                     separateDialCode: true,
+                    allowDropdown: false,
                     utilsScript: "/assets/js/utils.js"
                 });
             } else {
@@ -62,6 +63,7 @@ var myExtObject = (function() {
                 dropdownContainer: "body",
                 initialCountry: isSpectrum?"ng":"in",
                 separateDialCode: true,
+                allowDropdown: false,
                 utilsScript: "/assets/js/utils.js"
             });
 
