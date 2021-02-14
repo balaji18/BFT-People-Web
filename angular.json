@@ -128,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "BFT-WEBSITE"
+    }
+  },
+  "defaultProject": "BFT-WEBSITE",
+  "cli": {
+    "analytics": "862ff488-ff7d-4fe3-aae4-b689ba029a28"
+  }
 }

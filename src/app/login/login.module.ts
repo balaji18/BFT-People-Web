@@ -5,7 +5,6 @@ import { MerchantLoginComponent } from './merchant-login/merchant-login.componen
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'merchant-login', pathMatch: 'full' },
   { path: 'merchant-login', component: MerchantLoginComponent },
   { path: 'merchant-signup', component: SignupComponent },
 

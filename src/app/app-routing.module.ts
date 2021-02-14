@@ -3,9 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
+  { path: '' , loadChildren: () => import('./bft-portal/bft-portal.module').then(m => m.BftPortalModule)},
   { path: '' , loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
-
-
 ];
 
 @NgModule({
