@@ -47,3 +47,17 @@ a.nav-link:hover{
     height: 540px;
     overflow: hidden;
 }
+
+.yellow-btn {
+    color: white;
+    background: #f3ba1b;
+    width: 200px;
+    height: 45px;
+    border-radius: 4px;
+    border: none;
+}
+.painter-header {
+    font-size: 40px;
+    color: #009688;
+    font-weight: 700;
+}

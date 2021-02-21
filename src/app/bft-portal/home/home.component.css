@@ -1,0 +1,16 @@
+.white-floater {
+    position: absolute;
+    top: 14%;
+    width: 500px;
+    right: 7%;
+    height: 385px !important;
+    background: white;
+    border-radius: 4px;
+}
+
+.grey-card {
+    background: #f0f0f0;;
+    border-radius: 4px;
+    color: #a5a5a5;
+    height: 75%;
+}
