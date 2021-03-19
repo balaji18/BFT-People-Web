@@ -3,6 +3,13 @@
 .green-color {
     color: #009688;
 }
+.sm-head {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #009688;
+}
 .btn-green {
     background: #009688;
     color: white !important;
@@ -56,6 +63,16 @@ a.nav-link:hover{
     border-radius: 4px;
     border: none;
 }
+
+.green-btn {
+    color: white;
+    background: #009688;
+    width: 200px;
+    height: 45px;
+    border-radius: 4px;
+    border: none;
+}
+
 .painter-header {
     font-size: 40px;
     color: #009688;
@@ -111,6 +128,7 @@ a.nav-link:hover{
 .w-100 {
     width: 100%;
     overflow: hidden;
+    margin: 0 !important;
 }
 .dark-shade {
     background: #028075;
@@ -163,5 +181,14 @@ a.nav-link:hover{
     background: url('./assets/images/a-store.png');
     background-size: contain;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+.pointer {
+    cursor: pointer !important;
+}
+.sm-icon {
+    font-size: 45px;
+    color: #ffcd3f;
+    margin-right: 25px;
     cursor: pointer;
 }
