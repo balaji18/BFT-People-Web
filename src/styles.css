@@ -66,6 +66,11 @@ a.nav-link:hover{
     color: #FFCD39;
     font-weight: 700;
 }
+.b-header {
+    font-size: 40px;
+    color: #353535;
+    font-weight: 700;
+}
 .y-underline {
     text-decoration: underline;
     width: 100px;
@@ -73,7 +78,7 @@ a.nav-link:hover{
     height: 6px;
     position: absolute;
     bottom: 34px;
-    left: 215px;
+    margin-left: 20px;
 }
 .w-underline {
     text-decoration: underline;
@@ -82,7 +87,7 @@ a.nav-link:hover{
     height: 6px;
     position: absolute;
     bottom: 34px;
-    left: 215px;
+    margin-left: 20px;
 }
 .text-grey {
     color: #9A9A9A;
@@ -99,6 +104,9 @@ a.nav-link:hover{
 .bg-green {
     background: #009688;
     color: #fff;
+}
+.bg-yellow {
+    background: #FFCD39;
 }
 .w-100 {
     width: 100%;
@@ -137,4 +145,23 @@ a.nav-link:hover{
     outline: none;
     border:none;
     margin-bottom: 25px;
+}
+
+.g-play {
+    width: 260px;
+    height: 80px;
+    border-radius: 5px;
+    background: url('./assets/images/g-play.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.a-store {
+    width: 270px;
+    height: 75px;
+    border-radius: 5px;
+    background: url('./assets/images/a-store.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
