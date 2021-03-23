@@ -1,4 +1,9 @@
-body {
+body 
+
+
+
+/*
+{
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -7,13 +12,13 @@ body {
   }
   
   /* Add padding to containers */
-  .container {
+  /*.container {
     padding: 16px;
     background-color: white;
-  }
+  }*/
   
   /* Full-width input fields */
-  input[type=text], input[type=password] {
+  /*input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -26,15 +31,15 @@ body {
     background-color: #ddd;
     outline: none;
   }
-  
+  */
   /* Overwrite default styles of hr */
-  hr {
+  /*hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
   }
-  
+  */
   /* Set a style for the submit button */
-  .registerbtn {
+  /*.registerbtn {
     background-color: #4CAF50;
     color: white;
     padding: 16px 20px;
@@ -48,14 +53,14 @@ body {
   .registerbtn:hover {
     opacity: 1;
   }
-  
+  */
   /* Add a blue text color to links */
-  a {
+  /*a {
     color: dodgerblue;
   }
-  
+  */
   /* Set a grey background color and center the text of the "sign in" section */
-  .signin {
+  /*.signin {
     background-color: #f1f1f1;
     text-align: center;
   }
@@ -89,7 +94,7 @@ body {
     /*background-size: ;*/
 
 
-}
+/*}
 .option-radio:checked {
     background: url('/assets/images/radio-on-button.png');
     height: 15px;
@@ -99,6 +104,159 @@ body {
 }
 .option-input:checked::before {
     /* height: 50px; */
-    width: 13px;
+    /*width: 13px;
     position: absolute;
+}*/
+
+body{
+  height: 100vh;
+  background:yellow !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+  overflow: hidden;
+  border: 0 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.img-left{
+  width: 45%;
+  /*background: url('/assets/images/img.jpg') center;*/
+  background-size: cover;
+  background-color: green;
+  position: relative;
+  background-image: linear-gradient(45deg, green, green);
+  height: 100%;
+  padding: 25px;
+  color: rgb 192,192,192;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.img-left header {
+  color: #fff;
+  font-size: 44px;
+}
+
+.box {
+  position: relative;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+.card-body{
+  padding: 2rem;
+}
+
+.title{
+  margin-bottom: 2rem;
+}
+
+.form-input{
+  position: relative;
+}
+
+.form-input input{
+  width: 100%;
+  height: 45px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid #00000020;
+  border-radius: 50px;
+  outline: none;
+  background: transparent;
+}
+
+.form-input span{
+  position: absolute;
+  top: 10px;
+  padding-left: 15px;
+  color: green;
+}
+
+.form-input input::placeholder{
+  color: black;
+  padding-left: 0px;
+}
+
+.form-input input:focus, .form-input input:valid{
+  border: 2px solid green;
+}
+
+.form-input input:focus::placeholder{
+  color: #454b69;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+  background-color: green !important;
+  border: 0px;
+}
+
+p {
+  color: gray
+}
+
+.form-box button[type="submit"]{
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  /*border-radius: 50px;*/
+  background: green;
+  color: #fff;
+  font-size: 90%;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  transition: 0.5s;
+  padding: 12px;
+}
+
+.form-box button[type="submit"]:hover{
+  background: green;
+}
+
+.forget-link, .register-link{
+  color: green;
+  font-weight: bold;
+}
+
+.forget-link:hover, .register-link:hover{
+  color: green;
+  text-decoration: none;
+}
+.services-link {
+    text-align: center;
+}
+
+.services-link .fa {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #009688;
+    margin: 20px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.services-link .fa:hover {
+    background: #009688;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.pointer {
+  cursor: pointer;
 }

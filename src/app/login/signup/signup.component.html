@@ -1,4 +1,4 @@
-<body>
+<!--<body>
     <div class="container">
         <h1>Merchant Register</h1>
         <p>Please fill in this form to create an account.</p>
@@ -63,4 +63,88 @@
         <p>Already have an account? <a href="javascript:void(0)" (click)="redirectSignIn()">Sign in</a>.</p>
       </div>
 </body>
-    
+    -->
+
+
+<body style="background: yellow">
+  <div class="container">
+    <div class="row px-3">
+      <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
+        <div class="img-left d-none d-md-flex">
+          <div class="box"><header>bFT</header>
+          <h6 style="color: #fff">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h6>
+          <hr class="my-4" style="color: white">
+          <div class="services-link">
+            <i class="fa fa-envelope-open"></i>
+            <i class="fa fa-superpowers"></i>
+            <i class="fa fa-car"></i>
+            <i class="fa fa-cart-plus"></i><br>
+            <i class="fa fa-bug"></i>
+            <i class=""></i>
+            <i class="fa fa-twitter"></i><span style="color: #fff">And More..</span>
+        </div>
+             <div class="text-center mb-2 mt-5">
+              <h4 style="color: yellow">Have account already ?</h4> <span class="pointer" (click)="redirectSignIn();" style="color: #fff; font-size: 15px; font-weight: bold;">Login Here</span>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="card-body">
+          <h4 class="title text-center mt-4">
+            WELCOME ! <br>
+            <p style="font-size: 16px; text-align: center;" class="mt-2">Register within 5 minutes and <br> We will guide you in setting up store</p>
+          </h4>
+          <form class="form-box px-3">
+            <div class="form-input">
+              <span><i class="fa fa-user-o"></i></span>
+              <input type="type" name="" placeholder="Name*" tabindex="10" required>
+            </div>
+            <div class="form-input">
+              <span><i class="fa fa-phone"></i></span>
+              <input type="type" name="" placeholder="Mobile No*"  required>
+            </div>
+            <div class="form-input">
+              <span><i class="fa fa-envelope-o"></i></span>
+              <input type="type" name="" placeholder="Email ID*"  required>
+            </div>
+            <div class="form-input">
+              <span><i class="fa fa-telegram"></i></span>
+              <input type="type" name="" placeholder="Business Name" required  >
+            </div>
+            <div class="form-input">
+              <span><i class="fa fa-address-card-o"></i></span>
+              <input type="type" name="" placeholder="Address*" required>
+            </div>
+            <div class="form-input">
+              <span><i class="fa fa-check-circle"></i></span>
+              <input type="type" name="" placeholder="Select Categories" required>
+            </div>
+            <div class="form-input">
+              <span><i class="fa fa-key"></i></span>
+              <input type="password" name="" placeholder="CreatePassword" required>
+            </div>
+            <div class="form-input">
+              <span><i class="fa fa-check-circle-o"></i></span>
+              <input type="password" name="" placeholder="Confirm Password" required>
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-block text-uppercase" (click)="redirectSignIn()">
+                Let's Go
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="cb1" name="">
+                  <label class="custom-control-label" for="cb1">Remember me</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

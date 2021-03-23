@@ -10,9 +10,12 @@ declare let myExtObject: any;
   styleUrls: ['./merchant-login.component.css']
 })
 export class MerchantLoginComponent implements OnInit {
+  loginForm = true;
+  forgotPasswordForm = false;
   constructor(private router: Router) { }
 
   ngOnInit() {
+    this.loginForm = true;
     setTimeout(() => {
       myExtObject.loadFlag('');
     });
@@ -21,7 +24,16 @@ export class MerchantLoginComponent implements OnInit {
 
   redirectToSignUp() {
     this.router.navigate(['merchant-signup']);
+  }
 
+  redirectToSignIn() {
+    this.loginForm = true;
+    this.forgotPasswordForm =  false;
+  }
+
+  forgotPassword() {
+    this.loginForm = false;
+    this.forgotPasswordForm =  true;
   }
 
 }
