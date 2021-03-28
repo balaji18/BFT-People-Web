@@ -31,14 +31,6 @@ a.nav-link:hover{
     color: #009688;
 }
 
-.bft-logo {
-    font-size: 48px !important;
-    font-weight: bolder;
-    color: #009688;
-    line-height: 72px;
-    margin-left: 60px;
-}
-
 .bft-logo:hover {
     color: #009688;
 }
@@ -49,8 +41,8 @@ a.nav-link:hover{
 .wrapper-row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -12px !important;
-    margin-left: -12px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 .banner-img {
     width: 100%;
@@ -206,7 +198,7 @@ a.nav-link:hover{
 
 .white-floater {
     position: absolute;
-    top: 80px;
+    top: 170px;
     width: 500px;
     right: 7%;
     height: 385px !important;
@@ -219,4 +211,59 @@ a.nav-link:hover{
     border-radius: 4px;
     color: #a5a5a5;
     height: 75%;
+}
+
+.min-ht-15 {
+    min-height: 15rem;
+}
+.bg-pattern {
+    /* background: url('/assets/images/BG-Pattern1.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: #028277;
+    background-blend-mode: soft-light;
+    color: white;
+}
+.bft-logo {
+    width: 7.5rem;
+    line-height: 72px;
+    margin-left: 20px;
+}
+.app-head {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 68px;
+    text-align: center;
+}
+.banner-logo {
+    width: 6rem;
+    margin-bottom: 1.5rem;
+}
+.app-head1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+}
+.btn-white {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    width: 226px;
+    height: 45px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    background: white !important;
+    color: #009688 !important;
+    font-weight: 600 !important;
+}
+
+input.search {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.pt0 {
+    padding: 0 3rem 5rem 3rem;
 }
