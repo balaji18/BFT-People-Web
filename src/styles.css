@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-.green-color {
+.green-text {
     color: #009688;
+}
+.yellow-text {
+    color: #f3ba1b
 }
 .sm-head {
     font-style: normal;
@@ -191,4 +194,29 @@ a.nav-link:hover{
     color: #ffcd3f;
     margin-right: 25px;
     cursor: pointer;
+}
+.testimon-img {
+    width: 100px;
+    height: 100px;
+    background: #c4c4c4;
+    border-radius: 50%;
+    border: none;
+    margin-top: 10px;
+}
+
+.white-floater {
+    position: absolute;
+    top: 80px;
+    width: 500px;
+    right: 7%;
+    height: 385px !important;
+    background: white;
+    border-radius: 4px;
+}
+
+.grey-card {
+    background: #f0f0f0;;
+    border-radius: 4px;
+    color: #a5a5a5;
+    height: 75%;
 }
