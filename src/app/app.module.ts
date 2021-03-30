@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginModule } from './login/login.module';
 import { ProductModule } from './product/product.module';
+import { SharedModule } from './shared/shared.module';
+
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { ProductModule } from './product/product.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule,
     LoginModule,
     ProductModule
   ],

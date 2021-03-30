@@ -258,6 +258,19 @@ a.nav-link:hover{
     font-weight: 600 !important;
 }
 
+.btn-cancel {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    width: 226px;
+    height: 45px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    background: white !important;
+    color: #9a9a9a !important;
+    font-weight: 600 !important;
+}
+
 input.search {
     font-family: FontAwesome;
     font-style: normal;
@@ -266,4 +279,25 @@ input.search {
 }
 .pt0 {
     padding: 0 3rem 5rem 3rem;
+}
+.bg-cyan {
+    background: #E5FFFD;
+    border-radius: 5px;
+}
+.required {
+    color:  #028075;
+}
+.add-on-div {
+    margin: 0px;
+    margin-top: 2rem;
+    padding: 1rem 1rem 2.5rem 1rem;
+}
+.img-preview img {
+    width: 10rem;
+    height: auto;
+}
+.img-name {
+    position: absolute;
+    bottom: -5px;
+    font-weight: bold;
 }
