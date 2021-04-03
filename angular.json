@@ -26,7 +26,7 @@
             "styles": [
               "src/styles.css",
               "src/assets/css/intlTelInput.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
               "src/app/externalJs/external.js",

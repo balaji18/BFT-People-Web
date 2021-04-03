@@ -10,16 +10,40 @@
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a routerLink="/home"  routerLinkActive="active-link" class="nav-link pointer"> HOME </a>
+                <a routerLink="/dashbaord"  routerLinkActive="active-link" class="nav-link pointer"> DASHBOARD </a>
             </li>
             <li class="nav-item">
-                <a routerLink="/about-us"  routerLinkActive="active-link" class="nav-link pointer">ABOUT US</a>
+                <a routerLink="/products"  routerLinkActive="active-link" class="nav-link pointer">PRODUCTS</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/sign-up"  routerLinkActive="active-link" class="nav-link pointer">PARTNER REGISTRATION</a>
+                <a routerLink="/catalog"  routerLinkActive="active-link" class="nav-link pointer">CATELOG</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/merchant-login" class="nav-link pointer btn-green" (click)="merchantLogin()">MERCHANT LOGIN</a>
+                <a routerLink="/orders" routerLinkActive="active-link" class="nav-link pointer" >ORDERS</a>
+            </li> 
+
+            <li class="nav-item">
+                <a routerLink="/earnings"  routerLinkActive="active-link" class="nav-link pointer">EARNINGS</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/wallet" routerLinkActive="active-link" class="nav-link pointer" >
+                    <img src="/assets/images/vector.png" class="app-head-logo" />
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a (click)="notification()" routerLinkActive="active-link" class="nav-link pointer" >
+                    <img src="/assets/images/bell.png" class="app-head-logo" />
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a routerLink="/settings" routerLinkActive="active-link" class="nav-link pointer" >
+                    <img src="/assets/images/settings.png" class="app-head-logo" />
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a (click)="logout()" class="nav-link pointer" >
+                    <img src="/assets/images/logout.png" class="app-head-logo" />
+                </a>
             </li> 
         </ul>
     </div>  

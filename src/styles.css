@@ -301,3 +301,36 @@ input.search {
     bottom: -5px;
     font-weight: bold;
 }
+
+select::-ms-expand {
+    display: none;
+}
+
+select.minimal {
+    background-image:url('/assets/images/arrow-down.png');
+    background-position:
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-repeat: no-repeat;
+}
+
+select.minimal1 {
+    background-image:url('/assets/images/arrow-down-dark.png');
+    background-position:
+        calc(100% - 20px) calc(0.7em),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-repeat: no-repeat;
+}
+ 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+button:disabled {
+    background: #dddddd;
+    cursor: not-allowed;
+}
