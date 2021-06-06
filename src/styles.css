@@ -224,6 +224,14 @@ a.nav-link:hover{
     background-blend-mode: soft-light;
     color: white;
 }
+
+.bg-pattern1 {
+    background: url('/assets/images/Component 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    color: white;
+}
 .bft-logo {
     width: 7.5rem;
     line-height: 72px;
@@ -256,6 +264,10 @@ a.nav-link:hover{
     background: white !important;
     color: #009688 !important;
     font-weight: 600 !important;
+}
+.settings-dot {
+    position: relative;
+    right: 20px;
 }
 
 .btn-cancel {

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import '../../externalJs/external';
+import { LoginService } from '../login.service';
+import {HttpClient} from '@angular/common/http';
 declare let myExtObject: any;
 
 
@@ -12,7 +14,11 @@ declare let myExtObject: any;
 export class MerchantLoginComponent implements OnInit {
   loginForm = true;
   forgotPasswordForm = false;
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private http: HttpClient,
+    private loginService: LoginService
+  ) { }
 
   ngOnInit() {
     this.loginForm = true;
@@ -21,6 +27,25 @@ export class MerchantLoginComponent implements OnInit {
     });
   }
 
+  getOTP() {
+      const payload = {
+        mobileCountryCode: '+91',
+        mobileNo: '8217631764'
+      };
+      this.loginService.generateOTP(payload).subscribe({
+        next: (response) => {
+          console.log(response);
+        },
+        error: (error) => {
+          console.log(error);
+          if (error.error.message === 'Session expired' ||
+            error.error.message === 'Unauthorized request' ||
+            error.error.message === 'Update privacy policy') {
+            this.router.navigate(['error/' + error.error.message]);
+          }
+        }
+      });
+  }
 
   redirectToSignUp() {
     this.router.navigate(['merchant-signup']);

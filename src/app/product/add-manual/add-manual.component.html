@@ -1,4 +1,6 @@
-<div class="row w-100 bg-pattern min-ht-15">
+<app-app-header></app-app-header>
+
+<div class="row w-100 bg-pattern1 min-ht-15">
     <div class="col-12 p-5 text-center">
         <h3 class="app-head mt-4">Add my Product to listing </h3>
     </div>
@@ -106,7 +108,11 @@
             </div>
             <div class="row add-on-div bg-white">
                 <ngx-dropzone class="w-100 mt-3 ml-3 mr-3"  (change)="onSelect($event)">
-                    <ngx-dropzone-label>UPLOAD IMAGES</ngx-dropzone-label>
+                    <ngx-dropzone-label>
+                        Drag and drop files anywhere within this dotted area <br>
+                            or <br>
+                        UPLOAD IMAGES
+                    </ngx-dropzone-label>
                     <ngx-dropzone-image-preview class="img-preview" ngProjectAs="ngx-dropzone-preview" 
                     *ngFor="let f of files" [file]="f" [removable]="true" (removed)="onRemove(f)">
                         <ngx-dropzone-label class="img-name">{{ f.name }} </ngx-dropzone-label>
