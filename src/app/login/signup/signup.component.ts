@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormGroup, FormControl } from '@angular/forms';
 import '../../externalJs/external';
 declare let myExtObject: any;
 
@@ -9,6 +10,11 @@ declare let myExtObject: any;
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+
+  signUpForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+  });
 
   constructor(private router: Router) {
     setTimeout(() => { myExtObject.loadFlag(''); });

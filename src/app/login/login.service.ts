@@ -22,7 +22,7 @@ export class LoginService {
   ) { }
 
   generateOTP(payload: any): Observable<any> {
-    return this.http.post( this.serverUrl + '/user/merchant/otp', { headers: this.headers }).pipe(
+    return this.http.post( this.serverUrl + '/user/merchant/otp', payload, { headers: this.headers }).pipe(
       map( response => response),
       catchError(this._errorHandler)
     );
