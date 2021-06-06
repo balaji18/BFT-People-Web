@@ -99,41 +99,41 @@
             WELCOME ! <br>
             <p style="font-size: 16px; text-align: center;" class="mt-2">Register within 5 minutes and <br> We will guide you in setting up store</p>
           </h4>
-          <form class="form-box px-3">
+          <form [formGroup]="signUpForm" (ngSubmit)="redirectSignIn()" class="form-box px-3">
             <div class="form-input">
               <span><i class="fa fa-user-o"></i></span>
-              <input type="type" name="" placeholder="Name*" tabindex="10" required>
+              <input type="type" name="" formControlName="name" placeholder="Name*" tabindex="10" required>
             </div>
             <div class="form-input">
               <span><i class="fa fa-phone"></i></span>
-              <input type="type" name="" placeholder="Mobile No*"  required>
+              <input type="type" name="" formControlName="mobile" placeholder="Mobile No*"  required>
             </div>
             <div class="form-input">
               <span><i class="fa fa-envelope-o"></i></span>
-              <input type="type" name="" placeholder="Email ID*"  required>
+              <input type="type" name="" formControlName="email" placeholder="Email ID*"  required>
             </div>
             <div class="form-input">
               <span><i class="fa fa-telegram"></i></span>
-              <input type="type" name="" placeholder="Business Name" required  >
+              <input type="type" name="" formControlName="businessname" placeholder="Business Name" required  >
             </div>
             <div class="form-input">
               <span><i class="fa fa-address-card-o"></i></span>
-              <input type="type" name="" placeholder="Address*" required>
+              <input type="type" name="" formControlName="address" placeholder="Address*" required>
             </div>
             <div class="form-input">
               <span><i class="fa fa-check-circle"></i></span>
-              <input type="type" name="" placeholder="Select Categories" required>
+              <input type="type" name="" formControlName="category" placeholder="Select Categories" required>
             </div>
             <div class="form-input">
               <span><i class="fa fa-key"></i></span>
-              <input type="password" name="" placeholder="CreatePassword" required>
+              <input type="password" name="" formControlName="password" placeholder="Create Password" required>
             </div>
             <div class="form-input">
               <span><i class="fa fa-check-circle-o"></i></span>
-              <input type="password" name="" placeholder="Confirm Password" required>
+              <input type="password" name=""  formControlName="cpassword" placeholder="Confirm Password" required>
             </div>
             <div class="mb-3">
-              <button type="submit" class="btn btn-block text-uppercase" (click)="redirectSignIn()">
+              <button type="submit" class="btn btn-block text-uppercase" >
                 Let's Go
               </button>
             </div>

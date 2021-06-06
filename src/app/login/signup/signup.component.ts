@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import '../../externalJs/external';
 declare let myExtObject: any;
 
@@ -12,8 +12,14 @@ declare let myExtObject: any;
 export class SignupComponent implements OnInit {
 
   signUpForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
+    name: new FormControl('', Validators.required),
+    mobile: new FormControl(''),
+    email: new FormControl(''),
+    businessname: new FormControl(''),
+    address: new FormControl(''),
+    category: new FormControl(''),
+    password: new FormControl(''),
+    cpassword: new FormControl('')
   });
 
   constructor(private router: Router) {
@@ -23,12 +29,12 @@ export class SignupComponent implements OnInit {
 
   ngOnInit() {
     setTimeout(() => { myExtObject.loadFlagForInvite('in'); });
-
   }
 
 
   redirectSignIn() {
-    this.router.navigate(['merchant-login']);
+    console.log(this.signUpForm);
+    // this.router.navigate(['merchant-login']);
   }
 
 }

@@ -11,16 +11,16 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
   declarations: [AppFooterComponent, AppHeaderComponent],
   imports: [
     CommonModule,
-    NgxDropzoneModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxDropzoneModule,
   ],
   exports: [
+    FormsModule,
+    ReactiveFormsModule,
     NgxDropzoneModule,
     AppFooterComponent,
     AppHeaderComponent,
-    FormsModule,
-    ReactiveFormsModule
   ]
 })
 export class SharedModule { }
